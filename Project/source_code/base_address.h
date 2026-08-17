@@ -1,0 +1,73 @@
+
+
+#ifndef BASE_ADDRESS_H_
+#define BASE_ADDRESS_H_
+
+
+#define PERIPHERAL_BASE 		(0x40000000UL)
+
+/* AHB1 And related peripherals address config*/
+
+#define AHB1PERIPHERAL_OFFSET     	(0X00200000UL)
+#define AHB1PERIPHERAL_BASE       (PERIPHERAL_BASE + AHB1PERIPHERAL_OFFSET)
+
+//RCC CONFIG
+#define RCC_BASE   (AHB1PERIPHERAL_BASE + 0X3800UL)
+
+#define AHB1ENR_OFFSET        (0X30UL)
+#define APB2ENR_OFFSET	  (0X44UL)
+#define APB1ENR_OFFSET	  (0X40UL)
+
+
+#define RCC_AHB1ENR   (*(volatile unsigned int *)(RCC_BASE + AHB1ENR_OFFSET))
+#define RCC_APB2ENR   (*(volatile unsigned int *)(RCC_BASE + APB2ENR_OFFSET))
+#define RCC_APB1ENR   (*(volatile unsigned int *)(RCC_BASE + APB1ENR_OFFSET))
+
+
+//GPIOA ,GPIOB,GPIOC CONFIG   (PA5 AND PB13)
+
+#define GPIOA_OFFSET   		 (0X000UL)
+#define GPIOA_BASE    		(AHB1PERIPHERAL_BASE + GPIOA_OFFSET)
+
+
+#define  GPIOB_OFFSET   		 (0X0400UL)
+#define  GPIOB_BASE    			(AHB1PERIPHERAL_BASE + GPIOB_OFFSET)
+
+
+#define  GPIOC_OFFSET   		 (0X0800UL)
+#define  GPIOC_BASE    			(AHB1PERIPHERAL_BASE + GPIOC_OFFSET)
+
+
+
+
+/* APB2 And related peripherals address config*/
+
+#define APB2PERIPHERAL_OFFSET      (0x00007400UL)
+#define APB2PERIPHERAL_BASE 		(PERIPHERAL_BASE + APB2PERIPHERAL_OFFSET)
+
+#define ADC1_OFFSET 				(0XAC00UL)
+#define ADC1_BASE      				(APB2PERIPHERAL_BASE + ADC1_OFFSET)
+
+
+
+
+/* APB1 And related peripherals address config*/
+
+#define APB1PERIPHERAL_OFFSET   	(0X00000000)
+#define APB1PERIPHERAL_BASE			(PERIPHERAL_BASE + APB1PERIPHERAL_OFFSET)
+
+#define USART2_OFFSET    			(0X4400UL)
+#define USART2_BASE    				(APB1PERIPHERAL_BASE + USART2_OFFSET)
+
+
+
+enum State
+{
+	OFF,
+	ON
+};
+
+
+
+
+#endif /* BASE_ADDRESS_H_ */
