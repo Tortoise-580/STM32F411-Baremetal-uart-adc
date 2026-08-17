@@ -1,0 +1,5 @@
+../Src/adc.c:24:6:adc_init	1
+../Src/adc.c:50:6:adc_start_conversion	1
+../Src/adc.c:64:10:adc_read	2
+../Src/adc.c:72:6:adc_sample_signal	3
+../Src/adc.c:97:6:adc_transmit_signal	2

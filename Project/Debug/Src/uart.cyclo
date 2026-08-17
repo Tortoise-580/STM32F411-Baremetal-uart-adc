@@ -1,0 +1,4 @@
+../Src/uart.c:9:6:uart_init	1
+../Src/uart.c:54:6:usart2_write	2
+../Src/uart.c:61:6:usart2_read	2
+../Src/uart.c:70:6:configure_baud_rate	1

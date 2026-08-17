@@ -1,0 +1,4 @@
+../Src/uart.c:9:6:uart_init	8	static
+../Src/uart.c:54:6:usart2_write	16	static
+../Src/uart.c:61:6:usart2_read	4	static
+../Src/uart.c:70:6:configure_baud_rate	16	static

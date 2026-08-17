@@ -1,0 +1,8 @@
+../Src/gpio.c:7:6:gpio_init	1
+../Src/gpio.c:37:6:red_led_on	1
+../Src/gpio.c:42:6:blue_led_on	1
+../Src/gpio.c:47:6:red_led_off	1
+../Src/gpio.c:53:6:blue_led_off	1
+../Src/gpio.c:59:6:led_toggle	2
+../Src/gpio.c:66:6:program_state_set	6
+../Src/gpio.c:82:6:program_state_display	2
